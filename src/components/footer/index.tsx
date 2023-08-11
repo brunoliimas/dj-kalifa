@@ -4,7 +4,7 @@ export default function Footer() {
             <div className="container">
                 <div className="text-center">
                     <p className="text-sm">
-                        Musica do vídeo de <a className="hover:text-pink-600 transition-all duration-500" href="https://www.youtube.com/watch?v=ezVAUQcAA54" target="_blank" rel="noopener noreferrer">Urias - Blossom</a>
+                        Música do vídeo de <a className="hover:text-pink-600 transition-all duration-500" href="https://www.youtube.com/watch?v=ezVAUQcAA54" target="_blank" rel="noopener noreferrer">Urias - Blossom</a>
                     </p>
                     <p className="text-[10px]">
                         <span className="text-pink-600">DJ Kalifa ©</span> Todos os direitos reservados
