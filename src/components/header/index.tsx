@@ -14,13 +14,13 @@ export default function Header() {
                         height={40}
                     />
                     <div className="flex gap-4  order-1 md:order-2">
-                        <a className="p-2 bg-white text-black rounded-full hover:bg-pink-600 hover:text-white transition-all duration-500" href="http://" target="_blank" rel="noopener noreferrer">
+                        <a className="p-2 bg-white text-black rounded-full hover:bg-pink-600 hover:text-white transition-all duration-500" href="https://twitter.com/matheuskalifadj" target="_blank" rel="noopener noreferrer">
                             <FaTwitter />
                         </a>
-                        <a className="p-2 bg-white text-black rounded-full hover:bg-pink-600 hover:text-white transition-all duration-500" href="http://" target="_blank" rel="noopener noreferrer">
+                        <a className="p-2 bg-white text-black rounded-full hover:bg-pink-600 hover:text-white transition-all duration-500" href="https://open.spotify.com/user/gca4v5dt21kfwc56smwz8xrbb?si=25181da4b4b34ebf" target="_blank" rel="noopener noreferrer">
                             <FaSpotify />
                         </a>
-                        <a className="p-2 bg-white text-black rounded-full hover:bg-pink-600 hover:text-white transition-all duration-500" href="http://" target="_blank" rel="noopener noreferrer">
+                        <a className="p-2 bg-white text-black rounded-full hover:bg-pink-600 hover:text-white transition-all duration-500" href="https://soundcloud.com/majukalifa" target="_blank" rel="noopener noreferrer">
                             <FaSoundcloud />
                         </a>
                         <a className="p-2 bg-white text-black rounded-full hover:bg-pink-600 hover:text-white transition-all duration-500" href="https://www.instagram.com/eukalifadj/" target="_blank" rel="noopener noreferrer">

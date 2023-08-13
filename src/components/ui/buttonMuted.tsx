@@ -15,7 +15,7 @@ export const ButtonMuted = ({ isMuted, setIsMuted }: ButtonMutedProps) => {
     return (
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <button
-                className='group text-sm font-semibold flex flex-col items-center justify-center text-white hover:text-pink-600 transition-all duration-500'
+                className='p-10 rounded-full group text-sm font-semibold flex flex-col items-center justify-center text-white hover:text-pink-600 transition-all duration-500'
                 onClick={toggleMute} // Chame a função toggleMute quando o botão for clicado
             >
                 {isMuted ? ( // Use um ícone diferente com base no estado de mudo
