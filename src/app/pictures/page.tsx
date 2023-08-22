@@ -79,8 +79,8 @@ export default function Pages() {
                                     onClick={() => openModal(index)}
                                 >
                                     <Image
-                                        src={`/galery/${pic}.jpg`}
-                                        alt="Capa galeria"
+                                        src={`/galery/${pic}.JPG`}
+                                        alt={pic}
                                         width={710}
                                         height={710}
                                     />
@@ -122,6 +122,7 @@ export default function Pages() {
                         contentLabel="Modal"
                     >
                         <Carousel
+                            showIndicators={false}
                             className="w-full h-full"
                             selectedItem={selectedImageIndex}
                             showArrows={true}
@@ -133,8 +134,8 @@ export default function Pages() {
                             {picList.map((pic, index) => (
                                 <div key={index}>
                                     <Image
-                                        src={`/galery/${pic}`}
-                                        alt="Imagem da galeria"
+                                        src={`/galery/${pic}.JPG`}
+                                        alt={pic}
                                         width={710}
                                         height={710}
                                     />
