@@ -64,7 +64,7 @@ export default function Pages() {
                             </div>
                             <div className="w-full md:w-1/2">
                                 <Image
-                                    src="/galery/capa-fotos.jpg"
+                                    src="/galery/capa-fotos.JPG"
                                     alt="Capa galery"
                                     width={710}
                                     height={710}
