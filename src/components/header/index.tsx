@@ -1,5 +1,7 @@
 import Image from "next/image"
+import Link from "next/link"
 import { FaTwitter, FaSpotify, FaSoundcloud, FaInstagram } from 'react-icons/fa'
+import { HiPhotograph } from 'react-icons/hi'
 
 export default function Header() {
     return (
@@ -7,13 +9,17 @@ export default function Header() {
             <div className="container">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <Image
-                        className="mt-8 md:mt-0 order-2 md:order-1"
+                        className="my-8 md:my-0 order-2 md:order-1"
                         src="/grafitti-kalifa.svg"
                         alt="Dj Kalifa"
                         width={270}
                         height={40}
                     />
-                    <div className="flex gap-4  order-1 md:order-2">
+                    <Link href="/pictures" className="font-semibold flex items-center hover:text-pink-600 transition-all duration-500 order-3 md:order-2">
+                        <HiPhotograph size={24} className="mr-2"/>
+                        Galeria
+                    </Link>
+                    <div className="flex gap-4 order-1 md:order-3">
                         <a className="p-2 bg-white text-black rounded-full hover:bg-pink-600 hover:text-white transition-all duration-500" href="https://twitter.com/matheuskalifadj" target="_blank" rel="noopener noreferrer">
                             <FaTwitter />
                         </a>
