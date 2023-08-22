@@ -8,13 +8,13 @@ import Link from "next/link";
 import { IoMdArrowBack } from 'react-icons/io'
 import { AiOutlineLoading3Quarters } from 'react-icons/ai'
 
-const picList = ["IMG_1.jpg", "IMG_2.jpg", "IMG_3.jpg", "IMG_4.jpg", "IMG_5.jpg", "IMG_6.jpg", "IMG_7.jpg", "IMG_8.jpg", "IMG_9.jpg", "IMG_10.jpg", "IMG_11.jpg", "IMG_12.jpg", "IMG_13.jpg", "IMG_14.jpg", "IMG_15.jpg", "IMG_16.jpg", "IMG_17.jpg", "IMG_18.jpg", "IMG_19.jpg", "IMG_20.jpg", "IMG_21.jpg", "IMG_22.jpg", "IMG_23.jpg", "IMG_24.jpg", "IMG_25.jpg", "IMG_26.jpg", "IMG_27.jpg", "IMG_28.jpg", "IMG_29.jpg", "IMG_30.jpg", "IMG_31.jpg", "IMG_32.jpg", "IMG_33.jpg", "IMG_34.jpg", "IMG_35.jpg", "IMG_36.jpg", "IMG_37.jpg", "IMG_38.jpg", "IMG_39.jpg", "IMG_40.jpg", "IMG_41.jpg", "IMG_42.jpg", "IMG_43.jpg", "IMG_44.jpg", "IMG_45.jpg", "IMG_46.jpg", "IMG_47.jpg", "IMG_48.jpg", "IMG_49.jpg", "IMG_50.jpg", "IMG_51.jpg", "IMG_52.jpg", "IMG_53.jpg", "IMG_54.jpg", "IMG_55.jpg", "IMG_56.jpg", "IMG_57.jpg", "IMG_58.jpg", "IMG_59.jpg", "IMG_60.jpg", "IMG_61.jpg", "IMG_62.jpg", "IMG_63.jpg", "IMG_64.jpg", "IMG_65.jpg", "IMG_66.jpg", "IMG_67.jpg", "IMG_68.jpg", "IMG_69.jpg", "IMG_70.jpg", "IMG_71.jpg", "IMG_72.jpg", "IMG_73.jpg", "IMG_74.jpg", "IMG_75.jpg", "IMG_76.jpg", "IMG_77.jpg", "IMG_78.jpg", "IMG_79.jpg", "IMG_80.jpg", "IMG_81.jpg", "IMG_82.jpg", "IMG_83.jpg", "IMG_84.jpg", "IMG_85.jpg", "IMG_86.jpg", "IMG_87.jpg", "IMG_88.jpg", "IMG_89.jpg", "IMG_90.jpg", "IMG_91.jpg", "IMG_92.jpg", "IMG_93.jpg", "IMG_94.jpg", "IMG_95.jpg", "IMG_96.jpg", "IMG_97.jpg", "IMG_98.jpg", "IMG_99.jpg", "IMG_100.jpg", "IMG_101.jpg", "IMG_102.jpg", "IMG_103.jpg", "IMG_104.jpg", "IMG_105.jpg", "IMG_106.jpg", "IMG_107.jpg", "IMG_108.jpg", "IMG_109.jpg", "IMG_110.jpg", "IMG_111.jpg", "IMG_112.jpg", "IMG_113.jpg", "IMG_114.jpg", "IMG_115.jpg", "IMG_116.jpg", "IMG_117.jpg", "IMG_118.jpg", "IMG_119.jpg", "IMG_120.jpg", "IMG_121.jpg", "IMG_122.jpg", "IMG_123.jpg",
+const picList = ["IMG_1", "IMG_2", "IMG_3", "IMG_4", "IMG_5", "IMG_6", "IMG_7", "IMG_8", "IMG_9", "IMG_10", "IMG_11", "IMG_12", "IMG_13", "IMG_14", "IMG_15", "IMG_16", "IMG_17", "IMG_18", "IMG_19", "IMG_20", "IMG_21", "IMG_22", "IMG_23", "IMG_24", "IMG_25", "IMG_26", "IMG_27", "IMG_28", "IMG_29", "IMG_30", "IMG_31", "IMG_32", "IMG_33", "IMG_34", "IMG_35", "IMG_36", "IMG_37", "IMG_38", "IMG_39", "IMG_40", "IMG_41", "IMG_42", "IMG_43", "IMG_44", "IMG_45", "IMG_46", "IMG_47", "IMG_48", "IMG_49", "IMG_50", "IMG_51", "IMG_52", "IMG_53", "IMG_54", "IMG_55", "IMG_56", "IMG_57", "IMG_58", "IMG_59", "IMG_60", "IMG_61", "IMG_62", "IMG_63", "IMG_64", "IMG_65", "IMG_66", "IMG_67", "IMG_68", "IMG_69", "IMG_70", "IMG_71", "IMG_72", "IMG_73", "IMG_74", "IMG_75", "IMG_76", "IMG_77", "IMG_78", "IMG_79", "IMG_80", "IMG_81", "IMG_82", "IMG_83", "IMG_84", "IMG_85", "IMG_86", "IMG_87", "IMG_88", "IMG_89", "IMG_90", "IMG_91", "IMG_92", "IMG_93", "IMG_94", "IMG_95", "IMG_96", "IMG_97", "IMG_98", "IMG_99", "IMG_100", "IMG_101", "IMG_102", "IMG_103", "IMG_104", "IMG_105", "IMG_106", "IMG_107", "IMG_108", "IMG_109", "IMG_110", "IMG_111", "IMG_112", "IMG_113", "IMG_114", "IMG_115", "IMG_116", "IMG_117", "IMG_118", "IMG_119", "IMG_120", "IMG_121", "IMG_122", "IMG_123",
 ];
 
 export default function Pages() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-    const [visibleImages, setVisibleImages] = useState(12);
+    const [visibleImages, setVisibleImages] = useState(8);
     const [loading, setLoading] = useState(false);
 
     const openModal = (index: number) => {
@@ -28,7 +28,7 @@ export default function Pages() {
     const loadMoreImages = () => {
         setLoading(true);
         setTimeout(() => {
-            setVisibleImages(prevVisibleImages => prevVisibleImages + 12);
+            setVisibleImages(prevVisibleImages => prevVisibleImages + 8);
             setLoading(false);
         }, 1000);
     };
@@ -40,13 +40,13 @@ export default function Pages() {
                 <div className="container">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <Image
-                            className="mt-8 md:mt-0"
+                            className="mt-8 md:mt-0 order-2 md:order-1"
                             src="/grafitti-kalifa.svg"
                             alt="Dj Kalifa"
                             width={270}
                             height={40}
                         />
-                        <Link href="/" className="font-semibold flex items-center hover:text-pink-600 transition-all duration-500">
+                        <Link href="/" className="font-semibold flex items-center hover:text-pink-600 transition-all duration-500 order-1 md:order-2">
                             <IoMdArrowBack size={24} className="mr-2" />
                             Voltar
                         </Link>
@@ -79,7 +79,7 @@ export default function Pages() {
                                     onClick={() => openModal(index)}
                                 >
                                     <Image
-                                        src={`/galery/${pic}`}
+                                        src={`/galery/${pic}.jpg`}
                                         alt="Capa galeria"
                                         width={710}
                                         height={710}
